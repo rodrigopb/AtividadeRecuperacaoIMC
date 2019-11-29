@@ -41,7 +41,7 @@
     </ion-row>
     <ion-row>
         <ion-col>
-            <ion-button expand="block" (click)="calcularIMC" color="success">
+            <ion-button expand="block" (click)="calcularIMC()" color="success">
               Calcular
             </ion-button>
         </ion-col>
@@ -52,7 +52,7 @@
             <ion-label position="floating">
               Resultado
             </ion-label>
-            <ion-input  type="text" [value]="resultado()" disabled="true"></ion-input>
+            <ion-input  type="text" [value]="exibeIMC()" disabled="true"></ion-input>
           </ion-item>
         </ion-col>
     </ion-row>
